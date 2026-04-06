@@ -12,119 +12,124 @@ Finding the right teammates during hackathons is often stressful, inefficient, a
 
 ##  Our Solution
 
-**DevMatch** is a smart teammate discovery platform that connects users through **skill-based matching, swipe interactions, and real-time collaboration tools**. It simplifies team formation by helping users find the most compatible partners quickly and efficiently.
+**DevMatch** is a smart teammate discovery platform designed to connect users through **skill-based matching, swipe interactions, and team formation tools**. It combines an interactive frontend prototype with a scalable backend architecture to streamline team building.
 
 ---
 
 ##  Objective
 
-To streamline hackathon team formation by combining intelligent matching with interactive and user-friendly features.
+To simplify hackathon team formation by combining intuitive user interaction with a powerful backend system for matching and collaboration.
 
 ---
 
 ##  Target Users
 
 * Students participating in hackathons
-* Developers looking for collaborators
-* Beginners seeking balanced teams
-* Designers and AI enthusiasts
+* Developers, designers, and AI enthusiasts
+* Beginners looking for balanced teams
 
 ---
 
 ##  Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript *(or React)*
+* **Frontend:** HTML, CSS, JavaScript
 * **Backend:** Node.js, Express.js
-* **Database & Auth:** Supabase
+* **Database:** Supabase (PostgreSQL)
+* **API Design:** RESTful APIs (OpenAPI specification)
 
 ---
 
 ##  Key Features
 
-*  **Detailed User Profiles**
-  Includes skills, role, experience level, personality, and availability
+###  Implemented (Frontend Prototype)
 
-*  **Smart Matching System**
-  Recommends users based on shared skills and compatibility
+*  Create developer profiles (name, role, skills, bio)
+*  Browse and search users by skills
+*  Dynamic profile rendering using cards
+*  Basic chat interface (frontend simulation)
+*  Quiz feature (frontend logic)
+*  Swipe interface prototype
+  
+## Summary
 
-*  **Swipe-Based Interaction**
-  Like or dislike users (Tinder-style experience)
+### Your frontend modules:
 
-*  **Mutual Match Creation**
-  Matches are created only when both users like each other
+* index.html → Main UI
+* styles.css → Design
+* app.js → Navigation
+* swipe.js → Swipe system
+* messaging.js → Chat
+* quiz.js → Quiz
+* teams.js → Teams 
 
-*  **Messaging System**
-  Chat functionality between matched users
+###  Backend Capabilities
 
-*  **Skill-Based Quizzes**
-  Evaluate and validate user expertise
-
-*  **Team Formation**
-  Create teams with required roles and manage members
+*  User management system
+*  Swipe-based matching system
+*  Mutual match creation
+*  Messaging system (one-message logic)
+*  Team creation with role-based requirements
+*  AI-based skill match scoring
 
 ---
 
 ##  User Flow
 
-1. User signs up and creates a profile
-2. Adds skills, role, and experience
-3. Browses other users via swipe interface
-4. Likes or dislikes profiles
-5. Mutual likes result in a match
-6. Users can chat and form teams
+1. User creates a profile
+2. Profile is displayed in browse section
+3. Users search and filter based on skills
+4. Users interact via swipe prototype
+5. Matches and team logic handled via backend APIs
+6. Users can chat and attempt quizzes (UI prototype)
 
 ---
 
 ##  Matching Logic
 
-* Users are recommended based on **common skills**
-* Swipe system allows interaction between users
-* A match is created only on **mutual likes**
-* Additional factors:
+* Frontend supports **basic skill-based filtering**
+* Backend supports **advanced matching**:
 
+  * Skill comparison
+  * AI-based match scoring
   * Role compatibility
-  * Experience level
-  * Quiz performance
+* Swipe system enables mutual matching
 
 ---
 
 ##  System Design Overview
 
-* Supabase handles **database and authentication**
-* Backend manages:
-
-  * Matching logic
-  * Swipe interactions
-  * Team management
-* Frontend provides:
-
-  * Interactive UI
-  * Swipe experience
-  * Match visualization
+* Frontend built with HTML, CSS, and JavaScript for interactive UI
+* Backend exposes REST APIs for users, teams, swipes, matches, quizzes, and messaging
+* Supabase is used for database and authentication
+* Modular architecture allows easy scaling from prototype to full product
+* API follows structured OpenAPI specification
 
 ---
 
 ##  Database Schema
 
-The system is structured using the following core tables:
+The system uses a structured relational database with the following tables:
 
 * **Users** → Profile data (skills, role, experience, personality)
 * **Teams** → Team creation and role requirements
-* **Swipes** → User interactions (like/dislike)
-* **Matches** → Mutual connections between users
-* **Messages** → Communication between matched users
-* **Quizzes** → Skill-based questions and evaluation
+* **Swipes** → Like/dislike interactions
+* **Matches** → Mutual matches between users
+* **Messages** → Communication system
+* **Quizzes** → Skill-based evaluation
 
 ---
 
-##  Core Functionalities
+##  API Overview
 
-* Create and manage user profiles
-* Swipe (like/dislike) other users
-* Generate matches based on mutual interest
-* Send messages between matched users
-* Create and manage teams
-* Evaluate skills through quizzes
+Key API modules include:
+
+* Users → Create, update, fetch profiles
+* Teams → Create teams and manage members
+* Swipes → Like/dislike users
+* Matches → Store mutual matches
+* Quizzes → Skill-based questions and scoring
+* Messages → Communication between users
+* Matching → AI-based match scoring
 
 ---
 
@@ -134,7 +139,33 @@ The system is structured using the following core tables:
 * Duplicate swipes prevented
 * Self-matching restricted
 * Users with no available teammates
-* Messaging restricted to matched users only
+* Controlled messaging between users
+
+---
+
+##  Note
+
+This project demonstrates a **working frontend prototype** along with a **fully designed backend architecture**. Backend APIs and database schema are implemented, while full frontend-backend integration is in progress.
+
+---
+
+##  What Makes DevMatch Unique?
+
+* Combines **skill-based matching + swipe interaction**
+* Includes **AI-driven match scoring**
+* Supports **team formation with role requirements**
+* Designed as a **scalable full-stack system**
+* Demonstrates both **implementation and system design thinking**
+
+---
+
+##  Future Enhancements
+
+*  Full frontend-backend integration
+*  Real-time chat system
+*  Match percentage visualization
+*  Advanced AI recommendations
+*  Live deployment with user authentication
 
 ---
 
@@ -146,7 +177,7 @@ The system is structured using the following core tables:
 
 git clone https://github.com/your-username/DevMatch.git
 
-# Navigate to project directory
+# Navigate to project
 
 cd DevMatch
 
@@ -154,61 +185,32 @@ cd DevMatch
 
 npm install
 
-# Start the server
+# Run backend server
 
-npm start
+node server.js
 ```
 
 ---
 
 ##  Screenshots
 
-*(Add after UI is ready)*
+*(Add after UI is finalized)*
 
 ```
 ![Home Page](./screenshots/home.png)
-![Swipe Interface](./screenshots/swipe.png)
-![Matches Page](./screenshots/matches.png)
+![Browse Page](./screenshots/browse.png)
+![Profile Cards](./screenshots/cards.png)
 ```
-
----
-
-##  Challenges Faced
-
-* Designing an efficient and fair matching system
-* Handling real-time interactions (swipes & matches)
-* Managing relational data (users, teams, matches)
-* Ensuring smooth user experience
-
----
-
-##  What Makes DevMatch Unique?
-
-* Combines **skill-based matching + swipe interaction**
-* Supports **real-time communication**
-* Includes **quiz-based skill validation**
-* Enables **structured team formation**
-* Inspired by modern matchmaking apps but built for developers
-
----
-
-##  Future Enhancements
-
-*  Real-time chat with notifications
-*  Match percentage visualization
-*  Advanced AI-based recommendations
-*  Smart notifications for new matches
-*  Deployment with live collaboration
 
 ---
 
 ##  Evaluation Criteria Covered
 
-*  Strong DSA-based matching logic
-*  Scalable system design
-*  Functional MVP with advanced features
-*  Clean and intuitive UI
-*  Complete and structured documentation
+*  Strong system design (full API architecture)
+*  Implementation of frontend prototype
+*  Clear DSA-based matching concept
+*  Scalable and modular structure
+*  Well-documented project
 
 ---
 
