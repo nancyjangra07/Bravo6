@@ -1,0 +1,15 @@
+hello you ! GK here.......
+Step 1: Create Supabase Project      
+Sign up / login
+Click “New Project”
+Choose:
+Name: team-matcher
+Database password
+
+Step 2: Create Database Tables
+Create table: users
+id
+name
+email
+skills
+interests
