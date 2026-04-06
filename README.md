@@ -216,11 +216,11 @@ node server.js
 
 ##  Team Contribution
 
-* Backend Development
-* Frontend Development
-* Database Design
-* Testing & Debugging
-* Documentation & Presentation
+* Backend Development(Gaurav and Jitendra)
+* Frontend Development(Nancy and Robin)
+* Database Design(Jitendra)
+* Testing & Debugging(Nancy and Tanu)
+* Documentation & Presentation(Tanu)
 
 ---
 
