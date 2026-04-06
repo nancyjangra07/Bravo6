@@ -197,9 +197,15 @@ node server.js
 *(Add after UI is finalized)*
 
 ```
-![Home Page](./screenshots/home.png)
-![Browse Page](./screenshots/browse.png)
-![Profile Cards](./screenshots/cards.png)
+![Home Page](<img width="818" height="753" alt="Screenshot 2026-04-06 135945" src="https://github.com/user-attachments/assets/539c7472-2965-4e22-b48b-324e5f18fe4b" />
+<img width="818" height="753" alt="Screenshot 2026-04-06 135945" src="https://github.com/user-attachments/assets/539c7472-2965-4e22-b48b-324e5f18fe4b" />
+)
+![Browse Page](<img width="955" height="294" alt="Screenshot 2026-04-06 140028" src="https://github.com/user-attachments/assets/ea98f8df-2689-42d8-9de7-9f018128e47a" />
+<img width="955" height="294" alt="Screenshot 2026-04-06 140028" src="https://github.com/user-attachments/assets/ea98f8df-2689-42d8-9de7-9f018128e47a" />
+)
+![Profile Cards](<img width="960" height="936" alt="Screenshot 2026-04-06 140120" src="https://github.com/user-attachments/assets/cf501bb3-6bb5-412c-9d90-794320ca7714" />
+<img width="960" height="936" alt="Screenshot 2026-04-06 140120" src="https://github.com/user-attachments/assets/cf501bb3-6bb5-412c-9d90-794320ca7714" />
+)
 ```
 
 ---
