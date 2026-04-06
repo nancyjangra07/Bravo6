@@ -1,4 +1,4 @@
-#  TeamUp
+#  DevMatch
 
 ### *Find your perfect hackathon teammate.*
 
@@ -12,7 +12,7 @@ In hackathons, finding the right teammates is often stressful, time-consuming, a
 
 ##  Our Solution
 
-**TeamUp** is a smart matchmaking platform that connects users based on their skills and interests. By analyzing user profiles, DevMatch suggests the most compatible teammates, helping participants build strong and balanced teams quickly.
+**DevMatch** is a smart matchmaking platform that connects users based on their skills and interests. By analyzing user profiles, DevMatch suggests the most compatible teammates, helping participants build strong and balanced teams quickly.
 
 ---
 
