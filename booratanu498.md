@@ -95,7 +95,7 @@ POST /user
 
 ---
 
-### ➤ Get Matches
+###  Get Matches
 
 ```
 GET /match/:userId
@@ -111,7 +111,7 @@ GET /match/:userId
 
 ---
 
-## 🧪 Edge Cases Handled
+##  Edge Cases Handled
 
 * No users available
 * No matching skills
