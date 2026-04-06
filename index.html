@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DevMatch</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+<header>
+  <h1>DevMatch 🚀</h1>
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('form')">Create Profile</button>
+    <button onclick="showSection('browse')">Browse</button>
+  </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="section">
+  <h2>Find Your Hackathon Team</h2>
+  <p>Connect with developers, designers & innovators.</p>
+</section>
+
+<!-- CREATE PROFILE -->
+<section id="form" class="section hidden">
+  <h2>Create Profile</h2>
+  <input id="name" placeholder="Name" />
+  <input id="role" placeholder="Role (Frontend, Backend...)" />
+  <input id="skills" placeholder="Skills (comma separated)" />
+  <textarea id="bio" placeholder="Short bio"></textarea>
+  <button onclick="addProfile()">Submit</button>
+</section>
+
+<!-- BROWSE -->
+<section id="browse" class="section hidden">
+  <h2>Browse Developers</h2>
+  <input id="search" placeholder="Search by skill..." oninput="filterProfiles()" />
+  <div id="profiles"></div>
+</section>
+
+<script src="js/profiles.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
